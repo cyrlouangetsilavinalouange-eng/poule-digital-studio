@@ -470,8 +470,13 @@ function Footer() {
           <a href="#" aria-label="GitHub" className="hover:text-foreground transition-colors">
             <Github className="w-5 h-5" />
           </a>
-          <a href="mailto:hello@poule.agency" aria-label="Email" className="hover:text-foreground transition-colors">
+          <a
+            href="mailto:cyrlouangetsilavinalouange@gmail.com"
+            aria-label="Email"
+            className="inline-flex items-center gap-2 hover:text-foreground transition-colors"
+          >
             <Mail className="w-5 h-5" />
+            <span className="text-sm">cyrlouangetsilavinalouange@gmail.com</span>
           </a>
         </div>
         <div className="text-xs text-muted-foreground">
