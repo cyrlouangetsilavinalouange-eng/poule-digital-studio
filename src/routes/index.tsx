@@ -123,7 +123,21 @@ function Hero() {
           </a>
         </div>
 
-        <div className="mt-20 grid grid-cols-3 max-w-2xl mx-auto gap-8 text-left">
+        <div className="mt-20 mx-auto max-w-md">
+          <div className="relative group">
+            <div
+              className="absolute -inset-4 rounded-3xl blur-2xl opacity-40 group-hover:opacity-70 transition-opacity duration-700"
+              style={{ backgroundImage: "var(--gradient-accent)" }}
+            />
+            <img
+              src={brandImage}
+              alt="POULE — identité de marque"
+              className="relative rounded-2xl shadow-[var(--shadow-elegant)] w-full"
+            />
+          </div>
+        </div>
+
+        <div className="mt-16 grid grid-cols-3 max-w-2xl mx-auto gap-8 text-left">
           {[
             { k: "+50", v: "Projets livrés" },
             { k: "24h", v: "Temps de réponse" },
