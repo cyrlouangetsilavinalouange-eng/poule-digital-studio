@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import brandImage from "@/assets/poule-brand.jpg";
 import {
   LineChart,
   Video,
