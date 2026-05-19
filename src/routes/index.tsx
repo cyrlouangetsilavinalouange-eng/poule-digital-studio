@@ -105,7 +105,7 @@ function Hero() {
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
           Optimisation marketing, montage vidéo professionnel et assistance virtuelle
-          stratégique. Nous transformons vos idées et vos données en résultats concrets.
+          stratégique. Nous transformons vos volumes d'informations en résultats concrets.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
@@ -375,11 +375,11 @@ function About() {
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
             Alliant des compétences opérationnelles en communication digitale à une forte
-            capacité d'analyse stratégique, nous maîtrisons l'optimisation de contenus et la
-            gestion de projets. Grâce à une expertise poussée en exploration de données et
-            en analyse de marché, nous identifions les tendances clés pour guider vos
-            décisions. Autonomes, rigoureux et forces d'initiative, nous mettons notre
-            polyvalence et notre esprit d'analyse au service de votre performance.
+            capacité d'analyse, nous maîtrisons l'optimisation de contenus et la gestion de
+            projets. Grâce à une expertise en exploration de données et en analyse de
+            marché, nous identifions les tendances clés pour guider vos décisions.
+            Autonomes, rigoureux et forces d'initiative, nous mettons notre polyvalence au
+            service de votre performance.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-4">
