@@ -509,12 +509,59 @@ function Footer() {
   );
 }
 
+function Feed() {
+  const updates = useUpdates();
+  if (updates.length === 0) return null;
+  return (
+    <section id="actualites" className="px-6 py-20 border-t border-border/60">
+      <div className="max-w-5xl mx-auto">
+        <div className="flex items-end justify-between mb-10">
+          <div>
+            <p className="text-xs uppercase tracking-widest text-[var(--accent-bright)] mb-2">
+              Fil d'actualité
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl font-bold">
+              Les dernières mises à jour
+            </h2>
+          </div>
+          <span className="text-xs text-muted-foreground hidden md:block">
+            {updates.length} publication{updates.length > 1 ? "s" : ""}
+          </span>
+        </div>
+        <ul className="space-y-4">
+          {updates.map((u) => (
+            <li
+              key={u.id}
+              className="group border border-border rounded-2xl p-6 bg-card/40 hover:border-[var(--accent-bright)]/50 transition-colors"
+            >
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-[10px] uppercase tracking-widest font-semibold text-[var(--accent-bright)] px-2 py-1 rounded-full border border-[var(--accent-bright)]/30">
+                  {u.category}
+                </span>
+                <span className="text-xs text-muted-foreground">
+                  {new Date(u.createdAt).toLocaleDateString("fr-FR", {
+                    day: "2-digit",
+                    month: "long",
+                    year: "numeric",
+                  })}
+                </span>
+              </div>
+              <p className="text-base leading-relaxed">{u.text}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
 function Landing() {
   return (
     <div className="min-h-screen">
       <Navbar />
       <main>
         <Hero />
+        <Feed />
         <Services />
         <Portfolio />
         <About />
