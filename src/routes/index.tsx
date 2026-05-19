@@ -495,8 +495,14 @@ function Footer() {
             <span className="text-sm">cyrlouangetsilavinalouange@gmail.com</span>
           </a>
         </div>
-        <div className="text-xs text-muted-foreground">
-          Mentions légales · Politique de confidentialité
+        <div className="text-xs text-muted-foreground flex items-center gap-3">
+          <span>Mentions légales · Politique de confidentialité</span>
+          <Link
+            to="/admin"
+            aria-label="Accès administration"
+            title=""
+            className="w-1.5 h-1.5 rounded-full bg-muted-foreground/30 hover:bg-[var(--accent-bright)] transition-colors"
+          />
         </div>
       </div>
     </footer>
