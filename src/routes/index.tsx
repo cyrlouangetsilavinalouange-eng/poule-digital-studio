@@ -1,6 +1,7 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import brandImage from "@/assets/poule-brand.jpg";
+import { useUpdates } from "@/lib/updates";
 import {
   LineChart,
   Video,
